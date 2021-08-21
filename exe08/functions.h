@@ -1,2 +1,9 @@
+// Bibliotecas
+#include <ctype.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h> 
 
-int somar(int n1, int n2);
+// Verificar palíndromo
+bool is_palindromo(char texto[]);
+bool palindromoRec(char texto[], int i, int f);

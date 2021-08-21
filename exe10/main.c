@@ -1,18 +1,14 @@
-#include <stdio.h>
+// Bibliotecas
 #include "functions.h"
 
-int main() {
+// Main
+int main (void)
+{
+	int d = 0;
 
-    int a, b, s;
+	scanf("%d", &d);
+
+	void tabela_verdade(int d);
   
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
-
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+	return 0;
 }

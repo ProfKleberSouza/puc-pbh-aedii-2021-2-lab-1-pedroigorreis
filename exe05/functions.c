@@ -1,7 +1,18 @@
-
+// Bibliotecas
 #include "functions.h"
 
-int somar(int n1, int n2){
+// Inverter string
+void inverte(char texto[])
+{
+	int i = 0;
+	int tamanho = strlen(texto);
 
-    return n1+n2;
+	for(i = 0; i < tamanho / 2; i++)
+	{
+		char aux = texto[i];
+		texto[i] = texto[tamanho - i - 1];
+		texto[tamanho - i - 1] = aux;
+	}
+
+	printf("%s\n", texto);
 }

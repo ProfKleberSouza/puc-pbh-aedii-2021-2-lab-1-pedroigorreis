@@ -1,18 +1,30 @@
+// Bibliotecas
 #include <stdio.h>
+#include <string.h>
 #include "functions.h"
 
-int main() {
+// Limite(s)
+#define MAX 100
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+// Ler string de forma segura
+char *lerString(char *string)
+{
+	if(fgets(string, MAX, stdin) != NULL)
+	{
+		int iuc = strlen(string) - 1;
+		if(string[iuc] == '\n') 
+		{
+				string[iuc] = '\0';
+		}
+		return string;
+	}
+	return NULL;
+}
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+// Main
+int main (void)
+{
+	char string[MAX];
+	numero_vogais(lerString(string));
+	return 0;
 }

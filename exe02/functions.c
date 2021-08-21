@@ -9,7 +9,7 @@ int menor(int v[], int n)
     {
       menorN = v[i];
     }
-    if(v[i] < menor)
+    if(v[i] < menorN)
     {
       menorN = v[i];
     }

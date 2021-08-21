@@ -1,7 +1,17 @@
-
+// Bibliotecas 
 #include "functions.h"
 
-int somar(int n1, int n2){
+// Verificar palíndromo
+bool palindromoRec(char texto[], int i, int f)
+{
+  if(i >= f){return true;}
+  if(texto[i] != texto[f]){return false;}
+  i++;
+  f--;
+  return palindromoRec(texto, i, f);
+}
 
-    return n1+n2;
+bool is_palindromo(char texto[])
+{
+  return palindromoRec(texto, 0, strlen(texto)-1);
 }

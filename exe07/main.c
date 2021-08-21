@@ -1,18 +1,15 @@
-#include <stdio.h>
+// Bibliotecas
 #include "functions.h"
 
-int main() {
+// Main
+int main (void)
+{
+	int x = 0;
+	int z = 0;
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+	scanf("%d %d", &x, &z);
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+	printf("MDC = %d\n", mdc(x, z));
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+	return 0;
 }

@@ -1,2 +1,2 @@
-
-int somar(int n1, int n2);
+// Função
+void menor_maior(int v[], int n, int *menor, int *maior);

@@ -1,18 +1,31 @@
+// Bibliotecas
 #include <stdio.h>
 #include "functions.h"
 
-int main() {
+// Main
+int main(void)
+{
+  	int n;
+  	scanf("%d", &n);
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+    // Variáveis
+	  int i = 0;
+  	int x = 0;
+  	int y = 0;
+  	int vetor[n];
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+    // Preenchimento do vetor
+  	for(i = 0; i < n; i++)
+  	{
+	    scanf("%d", &vetor[i]);
+  	}
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+    // Processamento
+  	menor_maior(vetor, n, &x,&y);
 
-  return(0);
+    // Impressão dos dados
+  	printf("MENOR = %d\n", x);
+  	printf("MAIOR = %d\n", y);
+
+  	return(0);
 }

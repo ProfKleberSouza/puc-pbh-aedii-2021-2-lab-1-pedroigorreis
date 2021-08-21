@@ -1,18 +1,14 @@
-#include <stdio.h>
+// Bibliotecas
 #include "functions.h"
 
-int main() {
+// Main
+int main (void)
+{
+	int x = 0;
+	int n = 0;
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+	scanf("%d %d", &x, &n);
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+	printf("%d\n",potencia(x,n));
+	return 0;
 }

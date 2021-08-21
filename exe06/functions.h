@@ -1,2 +1,6 @@
+// Bibliotecas
+#include <math.h>
+#include <stdio.h>
 
-int somar(int n1, int n2);
+// Potência
+int potencia (int x, int n);

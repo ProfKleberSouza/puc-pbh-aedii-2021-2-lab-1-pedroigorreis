@@ -1,7 +1,8 @@
-
+// Bibliotecas
 #include "functions.h"
 
-int somar(int n1, int n2){
-
-    return n1+n2;
+// Potência
+int potencia (int x, int n)
+{
+	return pow(x,n);
 }

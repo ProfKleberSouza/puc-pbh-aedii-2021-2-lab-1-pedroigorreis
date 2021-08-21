@@ -1,18 +1,37 @@
-#include <stdio.h>
+// Bibliotecas
 #include "functions.h"
 
-int main() {
+// Limites
+#define MAX 100
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+// Leitura segura de string(s)
+char *lerString(char *string)
+{
+	if(fgets(string, MAX, stdin) != NULL)
+	{
+		int iuc = strlen(string) - 1;
+		if(string[iuc] == '\n') 
+		{
+			string[iuc] = '\0';
+		}
+		return string;
+	}
+	return NULL;
+}
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+// Main
+int main (void)
+{
+	char string[MAX];
+	
+	if(is_palindromo(lerString(string)))
+	{
+		printf("SIM\n");
+	}
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+	else
+	{
+		printf("NÃO\n");
+	}
+	return 0;
 }
