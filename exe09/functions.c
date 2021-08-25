@@ -20,7 +20,7 @@ void placarRecursivo(char p[], int m, int n, int pos)
 		}
 
 		// Possibilidades 'B'
-		if(m > 0)
+		if(n > 0)
 		{
 			p[pos] = 'B';
 			placarRecursivo(p, m, n-1, pos+1);
@@ -32,7 +32,7 @@ void placarRecursivo(char p[], int m, int n, int pos)
 void placar_possiveis(int m, int n)
 {
 		// Variáveis
-		char placares [100];
+		char placares [MAX];
 
 		// Preenchimento do vetor e Impressão
 		placarRecursivo(placares,m,n,0);
