@@ -1,3 +1,7 @@
+// +----------------------------+
+// | LabI - C | @pedroigor.reis |
+// +----------------------------+
+
 // Importar funções
 #include "functions.h"
 

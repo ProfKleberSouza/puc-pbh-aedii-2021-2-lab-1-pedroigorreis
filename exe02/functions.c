@@ -1,3 +1,7 @@
+// +----------------------------+
+// | LabI - C | @pedroigor.reis |
+// +----------------------------+
+
 #include "functions.h"
 
 int menor(int v[], int n)

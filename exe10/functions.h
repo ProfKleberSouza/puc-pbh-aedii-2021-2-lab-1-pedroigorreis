@@ -1,4 +1,5 @@
 // Bibliotecas
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -7,4 +8,5 @@
 
 // Verificar tabela verdade
 void tabela_verdade(int d);
-void Recursiva(int p[], int d, int pos);
+void Recursiva(char p[], int d, int pos);
+
